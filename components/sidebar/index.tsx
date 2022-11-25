@@ -10,7 +10,7 @@ import MenuIcon from "./menu";
 
 const Sidebar = () => {
   return (
-    <section className="h-screen w-32 bg-black grid grid-cols-[auto, 1fr] py-6">
+    <section className="h-screen w-32 bg-black grid grid-cols-[auto, 1fr] py-6 sticky top-0 left-0 bottom-0">
       <Image
         src="/images/disney-logo.svg"
         alt="disney logo"
