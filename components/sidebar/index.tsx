@@ -19,16 +19,18 @@ const Sidebar = () => {
         className="z-[100] mx-auto "
       />
 
-      <div className="h-auto w-full flex flex-col items-center gap-8 cursor-pointer group z-50">
+      <div className="h-auto w-full flex flex-col place-items-center cursor-pointer group z-50">
         <div className="hidden group-hover:block absolute top-0 bottom-0 left-0 w-[500px] bg-gradient-to-r from-black to-black/20"></div>
-        <div className="relative w-6 h-6 rounded-full z-50 flex items-center gap-6 opacity-50 hover:opacity-100 hover:scale-110 hover:font-bold transition-all duration-150">
-          <Image
-            src="/images/profile.png"
-            alt="disney logo"
-            fill
-            className="rounded-full object-cover opacity-75 group-hover:opacity-100"
-          />
-          <span className="absolute left-10 bottom-0 hidden group-hover:block group-hover:animate-fade text-white z-50 text-lg whitespace-nowrap">
+        <div className="pl-10 py-3 w-full relative z-50 flex items-center gap-6 opacity-50 hover:opacity-100 hover:scale-110 hover:font-bold transition-all duration-150">
+          <div className="w-6 h-6 relative rounded-full">
+            <Image
+              src="/images/profile.png"
+              alt="disney logo"
+              fill
+              className="rounded-full object-cover opacity-75 group-hover:opacity-100"
+            />
+          </div>
+          <span className="absolute left-20 bottom-2 hidden group-hover:block group-hover:animate-fade text-white z-50 text-lg whitespace-nowrap">
             My Space
           </span>
         </div>
