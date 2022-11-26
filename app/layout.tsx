@@ -14,7 +14,7 @@ const RootLayout = ({ children }: Props) => {
     <html lang="en" className="bg-background-dark text-typography-light">
       <head />
       <body className={inter.className}>
-        <div className="flex bg-black relative">
+        <div className="grid grid-cols-[auto,1fr]">
           <aside>
             <Sidebar />
           </aside>
