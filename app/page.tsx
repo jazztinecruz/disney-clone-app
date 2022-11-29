@@ -1,10 +1,16 @@
 import Billboard from "../components/billboard";
+import Details from "../components/billboard/details";
+import FadeBillboard from "../components/fade/billboard";
+import Sponsors from "../components/sponsors";
 
 const HomePage = () => {
   return (
-    <>
+    <div>
       <Billboard />
-      <section className="-mt-[400px] relative z-10">
+      <section className="bg-black mt-60 lg:-mt-[200px] relative z-10 flex flex-col gap-6">
+        <Details />
+        <FadeBillboard />
+        <Sponsors/>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni delectus
         quis laborum. Dolore esse ea sit! Dolorem voluptatibus voluptatem,
         accusamus, labore ipsum cumque aspernatur tempore obcaecati
@@ -337,7 +343,7 @@ const HomePage = () => {
         minima eum, dolor voluptatibus amet ullam tempora facere iure porro!
         Dicta commodi, perspiciatis voluptatum velit quod ipsam quos?
       </section>
-    </>
+    </div>
   );
 };
 
