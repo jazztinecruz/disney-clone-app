@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import { useState } from "react";
 
 interface Props {
   bgImage: any;
@@ -9,22 +8,25 @@ interface Props {
 }
 
 const Sponsor = ({ bgImage, alt, videoLink }: Props) => {
-  const [playVideo, setPlayVideo] = useState(false);
-
   return (
-    <div
-      onMouseEnter={() => {
-        setPlayVideo(true);
-      }}
-      onMouseLeave={() => setPlayVideo(false)}
-      className="bg-card-dark aspect-video rounded-md grid items-center justify-center cursor-pointer hover:scale-110 transition-all duration-300">
-      {playVideo ? (
-        <video src={videoLink} autoPlay controls width={300} height={300} />
-      ) : (
-        <div className="w-20 h-5 md:w-28 md:h-7 lg:w-40 lg:h-14 relative">
-          <Image src={bgImage} alt={alt} fill className="object-contain" />
+    <div className="relative bg-card-dark group aspect-video rounded-md grid items-center justify-center cursor-pointer hover:scale-125 hover:z-[100] transition-all duration-300">
+      <video
+        autoPlay
+        loop
+        muted
+        className="hidden group-hover:block absolute inset-0 w-full h-full">
+        <source src={videoLink} type="video/mp4" />
+      </video>
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+        <div className="w-14 h-14 lg:w-36 lg:h-36 relative">
+          <Image
+            src={bgImage}
+            alt={alt}
+            fill
+            className="object-contain group-hover:hidden"
+          />
         </div>
-      )}
+      </div>
     </div>
   );
 };

@@ -2,14 +2,14 @@ import Sponsor from "./sponsor";
 
 const Sponsors = () => {
   return (
-    <div className="grid grid-flow-col gap-3 mt-10">
+    <div className="grid grid-cols-3 lg:grid-cols-6 gap-3 mt-10">
       <Sponsor
-        bgImage="/images/sponsors/disney.png"
+        bgImage="/images/sponsors/disney-plus.png"
         videoLink="/videos/sponsors/disney-video.mp4"
         alt="disney"
       />
       <Sponsor
-        bgImage="/images/sponsors/pixarr.jpg"
+        bgImage="/images/sponsors/pixar.png"
         videoLink="/videos/sponsors/pixar-video.mp4"
         alt="pixar"
       />
@@ -29,7 +29,7 @@ const Sponsors = () => {
         alt="national-geographic"
       />
       <Sponsor
-        bgImage="/images/sponsors/star-wars.png"
+        bgImage="/images/sponsors/star.png"
         videoLink="/videos/sponsors/star-video.mp4"
         alt="star"
       />
