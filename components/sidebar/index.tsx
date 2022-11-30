@@ -15,7 +15,7 @@ const Sidebar = () => {
   const [showFade, setShowFade] = useState(false);
 
   return (
-    <section className="relative h-screen w-32 bg-black grid grid-cols-[auto, 1fr] py-6 sticky top-0 left-0 bottom-0 z-50">
+    <section className="relative h-screen w-24 md:w-32 bg-black grid grid-cols-[auto, 1fr] py-6 sticky top-0 left-0 bottom-0 z-50">
       <Image
         src="/images/disney-logo.svg"
         alt="disney logo"
