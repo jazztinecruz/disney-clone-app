@@ -4,7 +4,7 @@ import Button from "../Button";
 const Details = () => {
   return (
     <div className="absolute -top-80 left-0 right-0 max-w-lg flex flex-col gap-4 z-[100]">
-      <span className="text-6xl font-bold">LIGHTYEAR</span>
+      <span className="text-5xl md:text-6xl font-bold">LIGHTYEAR</span>
       <div className="font-semibold tracking-wider text-white/75 flex items-center gap-3">
         <span>2022</span>
         <div className="w-1 h-1 bg-white/50 rounded-full"></div>
